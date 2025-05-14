@@ -1,0 +1,34 @@
+.theme-toggle-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode {
+    --wp--preset--color--background: #3f3f3f;
+    --wp--preset--color--foreground: #ffffff;
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
+}
+
+link.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
